@@ -57,14 +57,14 @@ class Program
 
         Console.WriteLine($"Your grade is: {letter}{sign}");
 
-        if (letter == "A" || letter == "B" || letter == "C" || letter == "D")
+        if (letter == "A" || letter == "B" || letter == "C")
         {
             Console.WriteLine($"Congradulations! You passed the corse with an {letter}{sign}!");
         }
 
-        else if (letter == "F")
+        else if (letter == "F" || letter == "D")
         {
-            Console.WriteLine($"Sorry! You have a grade of: {letter}. You have not passed the corse. Better luck next time!");
+            Console.WriteLine($"Sorry! You have a grade of: {letter}{sign}. You have not passed the corse. Better luck next time!");
         }
     }
 }
