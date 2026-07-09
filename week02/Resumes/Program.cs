@@ -17,12 +17,14 @@ class Program
         job2._startYear = 2013;
         job2._endYear = 2020;
 
-        job1.DisplayJobYears();
-        job2.DisplayJobYears();
+
 
         Resume resume = new Resume();
+        resume._name = "Stephen Jones";
         resume._jobs.Add(job1);
         resume._jobs.Add(job2);
-        Console.WriteLine(resume._jobs[0]._jobTitle);
+
+        resume.DisplayResume();
+
     }
 }

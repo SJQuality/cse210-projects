@@ -1,16 +1,19 @@
+using System;
+
 public class Resume()
 {
-    public String _name = "";
+    public string _name;
     public List<Job> _jobs = new List<Job>();
 
 
     public void DisplayResume()
     {
-        Console.WriteLine(_name);
+        Console.WriteLine($"Name: {_name}");
+        Console.WriteLine("Jobs:");
 
-        foreach (String position in _jobs)
+        foreach (Job job in _jobs)
         {
-
+            job.DisplayJob();
         }
     }
 
