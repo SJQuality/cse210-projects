@@ -1,13 +1,16 @@
-// Display
-// Atr = Save (strings)prompt, date, response
 
 public class Entry
 {
-    String _date = "";
-    String _promptText = "";
-    String _entryText = "";
+    public string _date;
+    public string _promptText;
+    public string _entryText;
+
     public void Display()
     {
+
+        Console.WriteLine($"Date: {_date} Prompt: {_promptText}");
+        Console.WriteLine(_entryText);
+        Console.WriteLine();
 
     }
 }
